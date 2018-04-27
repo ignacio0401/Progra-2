@@ -2,12 +2,28 @@
 package javaapplication17;
 
 public class Nodo {
+    Object dato;
+    Nodo next;
+    
+    public Nodo(Object dato){
+        this.dato=dato;
+        this.next=null;
+    }
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    public Object getDato() {
+        return dato;
+    }
+
+    public void setDato(Object dato) {
+        this.dato = dato;
+    }
+
+    public Nodo getNext() {
+        return next;
+    }
+
+    public void setNext(Nodo next) {
+        this.next = next;
     }
     
 }
